@@ -1,0 +1,32 @@
+﻿<div class="parametricEQShell">
+			  <h3>Parametric EQ</h3><br/>
+				
+				<div class="passBand">
+				  <h4 class="eqBandTitle">High-Pass Filter</h4>
+				  <input class="parametric-eq-frequency-input" data-var="highPassFilter" data-parameter-type="frequency" type="range" min="10" max="10000" step="15" value="10">Freq.</input>
+				</div>
+				
+				<div class="parametricBand">
+				  <input class="parametric-eq-gain-input" data-var="lowFilter" data-parameter-type="gain" type="range" value="0" min="-40" max="20" step="0.1">Gain 1</input><br/>
+					<input class="parametric-eq-frequency-input" data-var="lowFilter" data-parameter-type="frequency" type="range" value="512" min="20" max="10000" step="15">Freq. 1</input><br/>
+					<input class="parametric-eq-q-input" data-var="lowFilter" data-parameter-type="Q" type="range" value="1" min="0.1" max="20" step="0.1">Q 1</input>
+				</div>
+				
+				<div class="parametricBand">
+				  <input class="parametric-eq-gain-input" data-var="midFilter" data-parameter-type="gain" type="range" value="0" min="-40" max="20" step="0.1">Gain 2</input><br/>
+					<input class="parametric-eq-frequency-input" data-var="midFilter" data-parameter-type="frequency" type="range" value="2048" min="20" max="20000" step="15">Freq. 2</input><br/>
+					<input class="parametric-eq-q-input" data-var="midFilter" data-parameter-type="Q" type="range" value="1" min="0.1" max="20" step="0.1">Q 2</input>
+				</div>
+				
+				<div class="parametricBand">
+				  <input class="parametric-eq-gain-input" data-var="highFilter" data-parameter-type="gain" type="range" value="0" min="-40" max="20" step="0.1">Gain 3</input><br/>
+					<input class="parametric-eq-frequency-input" data-var="highFilter" data-parameter-type="frequency" type="range" value="2048" min="20" max="20000" step="15">Freq. 2</input><br/>
+					<input class="parametric-eq-q-input" data-var="highFilter" data-parameter-type="Q" type="range" value="1" min="0.1" max="20" step="0.1">Q 3</input>
+				</div>
+				
+				<div class="passBand">
+				  <h4 class="eqBandTitle">Low-Pass Filter</h4>
+				  <input class="lpfreq" data-var="lowPassFilter" data-parameter-type="frequency" type="range" min="10" max="10000" step="15" value="10000">Freq.</input>
+				</div>
+			</div>
+			<br/>

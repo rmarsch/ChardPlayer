@@ -1,0 +1,41 @@
+﻿.chardplayer-ui-shell {
+	max-width: 560px;
+}
+
+.parametricEQShell, .graphicEQShell {
+  padding: 10px;
+
+  background: #eee;
+  border: 1px #666 solid;
+  border-radius: 20px;
+}
+
+.parametricEQShell {
+  width: 1054px;
+}
+
+.graphicEQShell {
+  width: 200px;
+}
+
+.parametricBand, .passBand {
+  display: inline-block;
+  
+  padding: 5px;
+  
+  color: #fff;
+  background: #888;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+}
+
+.eqBandTitle {
+	margin: 18px 0px;
+	text-align: center;
+}
+
+.eqDataVal {
+  width: 2.5em;
+  display: inline-block;
+  text-align: right;
+}

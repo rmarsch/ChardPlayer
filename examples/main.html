@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="../js/chardAudioProcessors.js"></script>
+	<script type="text/javascript" src="../dist/chardPlayer.min.js"></script>
+	<link rel="stylesheet" href="chardPlayer.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../dist/chardPlayerUI.min.css" type="text/css" media="all" />
+  </head>
+  <body>
+		<section class="audioPlayer">
+		
+			<div class="chardplayer-ui-shell">
+				<div class="chardplayer-ui-content">
+					<span class="chardplayer-ui-art-container"><img class="chardplayer-ui-art-img" /></span>
+					<a href="#" target="_blank" class="chardplayer-ui-song-title"></a>
+					
+					<br>
+				
+					<div class="chardplayer-ui-buttons">
+						<span class="chardplayer-ui-pause-button"></span>
+						<span class="chardplayer-ui-play-button chardplayer-hide"></span>
+						<span class="chardplayer-ui-prev-button"></span>
+						<span class="chardplayer-ui-next-button"></span>
+					</div>
+					<div class="chardplayer-ui-time">
+						<span class="chardplayer-ui-current-time">-:--</span> / 
+						<span class="chardplayer-ui-total-time">-:--</span>
+					</div>
+					<span class="chardplayer-ui-volume-bar" value="100">
+						<span class="chardplayer-ui-current-volume chardplayer-ui-slider-level"></span>
+					</span>
+					<span class="chardplayer-ui-mute-button"></span>
+					<span class="chardplayer-ui-unmute-button chardplayer-hide"></span>
+					<br style="clear: both;">
+				</div>
+				<div class="chardplayer-ui-seek-bar" value="0">
+					<span class="chardplayer-ui-seek-ellapsed chardplayer-ui-slider-level"></span>
+				</div>
+			</div>
+		
+			<audio id="audioContainer">
+				<source src="" type="audio/mpeg">
+				Your browser does not support HTML5 Audio
+			</audio>
+		</section>
+	
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var playlist = {
+					songs:[
+						{filename: "music/desertsurf.mp3", title: "The Desert Surf", artist: "Waking Chamber", artRef: "wakingchamber.jpg", linkUrl: "https://wakingchamber.bandcamp.com/"},
+						{filename: "music/manor.mp3", title: "Manor", artist: "Waking Chamber", artRef: "wakingchamber.jpg", linkUrl: "https://wakingchamber.bandcamp.com/"},
+						{filename: "music/A Dark Passage.mp3", title: "A Dark Passage", artist: "Waking Chamber", artRef: "wakingchamber.jpg", linkUrl: "https://wakingchamber.bandcamp.com/"},
+					],
+					options:{cycle:true}
+				};
+			
+				Chard.ChardPlayerUI.initialize(Chard.ChardPlayer);
+			
+				Chard.ChardPlayer.loadAudio('#audioContainer', playlist);
+			
+				Chard.ChardPlayer.playAudio();
+			});
+		</script>
+	</body>
+</html>

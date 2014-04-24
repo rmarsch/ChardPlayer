@@ -1,0 +1,11 @@
+﻿{
+	songs:[
+		{filename: "music/desertsurf.mp3", title: "The Desert Surf", artist: "Waking Chamber", 
+			artRef: "wakingchamber.jpg", linkUrl: "https://wakingchamber.bandcamp.com/"},
+		{filename: "music/manor.mp3", title: "Manor", artist: "Waking Chamber", 
+			artRef: "wakingchamber.jpg", linkUrl: "https://wakingchamber.bandcamp.com/"},
+		{filename: "music/A Dark Passage.mp3", title: "A Dark Passage", artist: "Waking Chamber", 
+			artRef: "wakingchamber.jpg", linkUrl: "https://wakingchamber.bandcamp.com/"},
+	],
+	options:{cycle:true}
+}
