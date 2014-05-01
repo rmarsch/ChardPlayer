@@ -10,21 +10,19 @@ management logic so it can be overridden.
 
 For now there is a dependency on jQuery.
 
-##
+## Playlist JSON format
 
-Playlist JSON format
-
-songs: array of song objects
+`songs`: array of song objects
 
 song object:
-filename (required): string -- Path to the file. Currently only supports files hosted on the server.
-title (required): string -- Title of the song
-artist: string -- Artist/Composer/Performer of the song
-artRef: string -- img src reference to artwork
-linkUrl: string -- Optional href target for link from song title in the UI
+`filename` (required): string -- Path to the file. Currently only supports files hosted on the server.
+`title` (required): string -- Title of the song
+`artist`: string -- Artist/Composer/Performer of the song
+`artRef`: string -- img src reference to artwork
+`linkUrl`: string -- Optional href target for link from song title in the UI
 
-options: object for setting option flags
--cycle: true | false -- flags whether the playlist should cycle or stop at the end
+`options`: object for setting option flags
+  `cycle`: true | false -- flags whether the playlist should cycle or stop at the end
 
 ## Issues
 
@@ -37,20 +35,21 @@ options: object for setting option flags
       <td>Safari</td>
       <td>Firefox</td>
       <td>Chrome</td>
-      <td><=IE9</td>
+      <td>&lt;=IE9</td>
       <td>IE10+</td>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>âœ”</td>
-      <td>âœ”</td>
-      <td>âœ”</td>
-      <td>â€</td>
-      <td>âœ”</td>
+      <td>&#x2713;</td>
+      <td>&#x2713;</td>
+      <td>&#x2713;</td>
+      <td>&#x2717;</td>
+      <td>&#x2713;</td>
     </tr>
   </tbody>
 </table>
+
 
 
 ## Build instructions
