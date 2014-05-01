@@ -14,15 +14,16 @@ For now there is a dependency on jQuery.
 
 `songs`: array of song objects
 
-song object:
-`filename` (required): string -- Path to the file. Currently only supports files hosted on the server.
-`title` (required): string -- Title of the song
-`artist`: string -- Artist/Composer/Performer of the song
-`artRef`: string -- img src reference to artwork
-`linkUrl`: string -- Optional href target for link from song title in the UI
+`song` object:
+
+* `filename` (required): string -- Path to the file. Currently only supports files hosted on the server.
+* `title` (required): string -- Title of the song
+* `artist`: string -- Artist/Composer/Performer of the song
+* `artRef`: string -- img src reference to artwork
+* `linkUrl`: string -- Optional href target for link from song title in the UI
 
 `options`: object for setting option flags
-  `cycle`: true | false -- flags whether the playlist should cycle or stop at the end
+* `cycle`: true | false -- flags whether the playlist should cycle or stop at the end
 
 ## Issues
 
