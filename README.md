@@ -25,6 +25,47 @@ For now there is a dependency on jQuery.
 `options`: object for setting option flags
 * `cycle`: true | false -- flags whether the playlist should cycle or stop at the end
 
+## UI API
+
+`Chard.ChardPlayerUI` provides a standard implementation for creating the UI and relaying UI events and player events between the two components.
+
+Standard Private Configurations:
+
+`STANDARD_UI_MAP`: _Mapping for the jQuery Selectors to important UI elements_
+
+  * `seekBar`: '.chardplayer-ui-seek-bar'
+	* `seekBarEllapsed`: '.chardplayer-ui-seek-ellapsed'
+	*	`volumeBar`: '.chardplayer-ui-volume-bar'
+	*	`volumeCurrent`: '.chardplayer-ui-current-volume'
+	*	`playButton`: '.chardplayer-ui-play-button'
+	*	`pauseButton`: '.chardplayer-ui-pause-button'
+	*	`prevSongButton`: '.chardplayer-ui-prev-button'
+	*	`nextSongButton`: '.chardplayer-ui-next-button'
+	*	`muteButton`: '.chardplayer-ui-mute-button'
+	*	`unmuteButton`: '.chardplayer-ui-unmute-button'
+	*	`art`: '.chardplayer-ui-art-img'
+	*	`songTitle`: '.chardplayer-ui-song-title'
+	*	`currentTime`: '.chardplayer-ui-current-time'
+	*	`totalTime`: '.chardplayer-ui-total-time'  
+
+`STANDARD_LISTENER_MAP`: _Mapping for important Listener and Delegator functions related to song progress, seeking, volume changes, and song changes_
+
+  * `songProgress`: songProgressListener
+	* `seek`: seekDelegator
+	* `volume`: volumeDelegator
+	* `songData`: playlistViewUpdater
+
+`STANDARD_TEMPLATE_URLS`: _Default relative server paths to HTML template files for UI elements like the player._
+
+  * `player`: 'chardPlayerTemplate.html'
+	* `parametricEQ`: 'parametricEQTemplate.html'
+	* `graphicEQ`: 'graphicEQTemplate.html'
+		
+Methods:
+
+* `drawPlayer(containerSelector)`: Draws the default player template as a child in the element described by `containerSelector`
+* `drawStandardTemplate(containerSelector, templateType)`: Draws a default template by template key `templateType` as a child in the element described by `containerSelector`
+
 ## Issues
 
 
